@@ -1,2 +1,2 @@
 # SoundInCloud
-Social network for musicians
+Social network for sharing and editing music
