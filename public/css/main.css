@@ -1,0 +1,87 @@
+.dark-primary-color    { background: #D32F2F; }
+.default-primary-color { background: #F44336; }
+.light-primary-color   { background: #FFCDD2; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #448AFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y: hidden;
+}
+
+.header-bar {
+    background-color: #F44336;
+    width: 100%;
+    height: 56px;
+}
+
+.header-bar .title {
+    color: #ffffff;
+    font-size: 25px;
+    padding-top: 12px;
+    padding-left: 15px;
+    float: left;
+    display: inline-block;
+}
+
+.header-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-bar .right-side {
+    float: right;
+    color: #212121;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header-bar .right-side span {
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.header-bar .active {
+    color: #ffffff;
+}
+
+
+
+.carousel {
+    background-color: #eeeeee;
+    display: block;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.carousel .content {
+    padding: 20px 50px 30px 50px;
+    text-align: justify;
+}
+
+
+.upload-container {
+    background-color: #eeeeee;
+    display: block;
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px dashed #BDBDBD;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-container h1 {
+    color: #757575;
+    font-weight: normal;
+}
