@@ -1,2 +1,2 @@
 # SoundInCloud
-Social network for sharing and editing music
+Socialno omrežje za deljenje glasbe.
