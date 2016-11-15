@@ -1,5 +1,5 @@
 .news-feed {
-    width: 60%;
+    width: 80%;
     margin: auto;
 
 }
@@ -35,4 +35,34 @@
     height: 30px;
     text-align: center;
     cursor: pointer;
+}
+
+.news-feed-element .controls .long {
+    display: inline-block;
+}
+
+.news-feed-element .controls .short {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+    .news-feed-element .controls .long {
+        display: none;
+    }
+
+
+    .news-feed-element .controls .short {
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 550px) {
+
 }
