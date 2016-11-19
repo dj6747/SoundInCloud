@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoundInCloud | admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin-home.css">
+</head>
+<body>
+    <div class="header-bar">
+        <div class="title">
+            <a href="admin-home.html" class="responsive-title-long">SoundInCloud</a>
+            <a href="admin-home.html" class="responsive-title-short">SC</a>
+        </div>
+
+        <div class="right-side">
+            <span class="active"><a href="admin-home.html">User list</a></span>
+            <span><a href="index.html">Sign out</a></span>
+        </div>
+    </div>
+
+
+    <div class="main-container">
+        <h2>Users</h2><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>status</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janez Novak</td>
+                    <td>janez.novak@gmail.com</td>
+                    <td>
+                        <input type="checkbox" value="1" checked>
+                        <span>Active</span>
+                    </td>
+                    <td><button>Remove user</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Number of users: 5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+</body>
+
+<script src="../js/main.js"></script>
+<script src="../js/login.js"></script>
+</html>

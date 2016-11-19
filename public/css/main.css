@@ -62,11 +62,14 @@ html, body {
 
 
 .carousel {
-    background-color: #eeeeee;
-    display: block;
+    background: url("../img/bg-mixer.jpg");
+    display: inline-block;
     float: left;
     width: 70%;
     height: 100%;
+    color: #ffffff;
+    overflow: hidden;
+    clear: right;
 }
 
 .carousel .content {
@@ -168,6 +171,17 @@ html, body {
     position: absolute;
     bottom: 2px;
     left: 10px;
+}
+
+
+audio {
+    margin: 30px 0px 0 0;
+    width: 100%;
+}
+
+
+ul {
+    list-style-image: url("../img/note.png");
 }
 
 @media (max-width: 1024px) {

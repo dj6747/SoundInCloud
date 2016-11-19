@@ -25,17 +25,25 @@
 
         <div class="left-side">
             <h2>Janez Novak</h2>
-            <form action="home.html">
-                First Name:<br>
-                <input type="text" name="firstname" autofocus><br>
-                Last Name:<br>
-                <input type="text" name="lastname" ><br>
+            <form id="register-form">
+                Name:<br>
+                <input type="text" name="firstname" placeholder="Enter your name..." autofocus><br>
+                Last name:<br>
+                <input type="text" name="lastname" placeholder="Enter your last name..." ><br>
                 Email:<br>
-                <input type="text" name="email"><br>
+                <input type="email" name="email" placeholder="Enter your email..."><br>
                 Password:<br>
-                <input type="text" name="password">
+                <input type="password" placeholder="Enter your password..." name="password"><br>
+                Repeat password:<br>
+                <input type="password" placeholder="Repeat your password..." name="repeat_password">
                 <br>
-                <button type="submit">Update data</button>
+                Gender:
+                <select name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br>
+
+                <button class="sign-up">Update data</button>
             </form>
         </div>
 
