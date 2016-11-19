@@ -83,7 +83,6 @@ html, body {
     flex-direction: row;
 }
 
-
 .upload-container {
     background-color: #eeeeee;
     display: block;
@@ -95,11 +94,14 @@ html, body {
     border-radius: 4px;
     -moz-border-radius: 4px;
     cursor: pointer;
+    height: 100%;
+
 }
 
-.upload-container h1 {
+.upload-container-h1 {
     color: #757575;
     font-weight: normal;
+    vertical-align: middle;
 }
 
 .main-container .left-side {

@@ -15,7 +15,7 @@ var LoginModule = function() {
 
     this.buttons = {
         signIn: document.getElementsByClassName("sign-in")[0],
-        signUp: document.getElementsByClassName("sign-up")[0],
+        signUp: document.getElementsByClassName("sign-up")[0]
     };
 };
 

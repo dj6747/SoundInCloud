@@ -50,7 +50,9 @@
     }
 
     .main-container .left-side input[type=text],
-    .main-container .left-side button {
+    .main-container .left-side button,
+    .main-container .left-side input[type=email],
+    .main-container .left-side input[type=password] {
         width: 80%;
     }
 }
