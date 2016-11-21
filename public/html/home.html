@@ -4,6 +4,9 @@
     <title>SoundInCloud | home</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+    <link rel="import"  href="components/upload.template.html" >
+    <link rel="import"  href="components/newsFeedElement.template.html" >
 </head>
 <body>
     <div class="header-bar">
@@ -24,7 +27,7 @@
     <div class="main-container">
 
         <div class="left-side">
-            <upload-container></upload-container>
+            <upload-container id="upload"></upload-container>
 
 
             <div class="news-feed">
@@ -39,14 +42,19 @@
                         </audio>
                     </div>
 
+                    <div class="comment-box">
+                        <input type="text" placeholder="Type in your comment"/>
+                        <button>Post</button>
+                    </div>
+
                     <div class="controls">
-                        <div class="like-btn">
+                        <div class="btn like-btn">
                             like
                         </div>
-                        <div class="comment-btn">
-                            comment
+                        <div class="btn share-btn">
+                            share
                         </div>
-                        <div class="add-to-lib-btn">
+                        <div class="btn add-to-lib-btn">
                             <span class="long">add to my library</span>
                             <span class="short">add</span>
                         </div>
@@ -80,7 +88,6 @@
 </body>
 
 <script src="../js/main.js"></script>
-<script src="../js/upload.js"></script>
 <script src="../js/friends.js"></script>
 <script src="../js/home.js"></script>
 </html>

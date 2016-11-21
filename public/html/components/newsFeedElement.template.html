@@ -1,0 +1,30 @@
+<template id="newsFeedElement-template">
+    <div class="news-feed-element">
+        <div class="title"></div>
+        <div class="audio">
+            <audio controls>
+                <source src="../../audio/song1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="comment-box">
+            <input type="text" placeholder="Type in your comment"/>
+            <button>Post</button>
+        </div>
+
+        <div class="controls">
+            <div class="btn like-btn">
+                like
+            </div>
+            <div class="btn share-btn">
+                share
+            </div>
+            <div class="btn add-to-lib-btn">
+                <span class="long">add to my library</span>
+                <span class="short">add</span>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="../../js/components/newsFeedElement.js"></script>

@@ -16,12 +16,13 @@
     display: block;
     position: relative;
     border: 1px solid #BDBDBD;
+    margin-bottom: 15px;
 }
 
 .news-feed-element .controls {
     width: 100%;
     height: 30px;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: -5px;
     border-top: 1px solid #BDBDBD;
     padding-top: 5px;
@@ -44,6 +45,22 @@
 .news-feed-element .controls .short {
     display: none;
 }
+
+
+.news-feed-element .comment-box {
+    margin-top: 20px;
+    display: flex;
+}
+
+.comment-box input {
+    flex-grow: 8;
+    margin-right: 15px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+}
+
 
 
 @media (max-width: 1024px) {

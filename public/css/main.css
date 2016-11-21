@@ -83,27 +83,6 @@ html, body {
     flex-direction: row;
 }
 
-.upload-container {
-    background-color: #eeeeee;
-    display: block;
-    width: 80%;
-    margin: 30px auto;
-    text-align: center;
-    padding: 10px;
-    border: 2px dashed #BDBDBD;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    cursor: pointer;
-    height: 100%;
-
-}
-
-.upload-container-h1 {
-    color: #757575;
-    font-weight: normal;
-    vertical-align: middle;
-}
-
 .main-container .left-side {
     display: flex;
     flex-direction:  column;
@@ -173,6 +152,12 @@ html, body {
     position: absolute;
     bottom: 2px;
     left: 10px;
+}
+
+.btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 

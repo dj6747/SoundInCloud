@@ -4,6 +4,9 @@
     <title>SoundInCloud | my library</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+    <link rel="import" href="components/upload.template.html" >
+    <link rel="import"  href="components/newsFeedElement.template.html" >
 </head>
 <body>
     <div class="header-bar">
@@ -40,13 +43,13 @@
                     </div>
 
                     <div class="controls">
-                        <div class="like-btn">
+                        <div class="btn like-btn">
                             like
                         </div>
-                        <div class="comment-btn">
+                        <div class="btn share-btn">
                             share
                         </div>
-                        <div class="add-to-lib-btn">
+                        <div class="btn add-to-lib-btn">
                             <span>edit</span>
                         </div>
                     </div>
@@ -78,7 +81,6 @@
 </body>
 
 <script src="../js/main.js"></script>
-<script src="../js/upload.js"></script>
 <script src="../js/friends.js"></script>
 <script src="../js/home.js"></script>
 </html>
