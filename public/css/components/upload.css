@@ -26,18 +26,18 @@
     display: none;
 }
 
-.after-upload {
+.upload-container .after-upload {
     border: 2px solid #BDBDBD;
     background-color: #ffffff;
 }
 
 
-.block2 .comment-section {
+.upload-container .block2 .comment-section {
     display: flex;
     width: 100%;
 }
 
-input[type="text"] {
+.upload-container input[type="text"] {
     width: 100%;
     height: 30px;
     margin: 10px auto;
@@ -46,7 +46,7 @@ input[type="text"] {
     -moz-border-radius: 4px;
 }
 
-.btn-post {
+.upload-container .btn-post {
     background-color: #448AFF;
     color: #ffffff;
     border: 0;
@@ -59,6 +59,6 @@ input[type="text"] {
     cursor: pointer;
 }
 
-.geolocation {
+.upload-container .geolocation {
     font-size: 12px;
 }
