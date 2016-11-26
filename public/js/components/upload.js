@@ -4,6 +4,8 @@ var UploadModule = function() {
     this.onPostCallback = null;
     this.files = [];
     this.posting = false;
+    this.coordinates = {};
+    this.canPost = false;
 };
 
 UploadModule.prototype = {
@@ -60,6 +62,7 @@ UploadModule.prototype = {
         block1.classList.add('hidden');
         block2.classList.remove('hidden');
         this.container.classList.add('after-upload');
+        this.getGeolocation();
     },
 
     populateFileList: function(files, file_list) {
@@ -72,34 +75,58 @@ UploadModule.prototype = {
     },
 
     onPost: function(event) {
-        if (!this.posting) {
+        if (!this.posting && this.canPost) {
             this.posting = true;
             var input = this.container.querySelector('.comment-box');
             if (input.value.length) {
-                this.onPostCallback(this.files, input.value);
+                this.onPostCallback(this.files, input.value, this.coordinates);
                 this.reset();
+                this.canPost = false;
             } else {
                 alert('Please insert message.');
             }
             this.posting = false;
+        } else if (!this.canPost) {
+            alert("Waiting for geolocation to load. Please try again in few moments.");
         }
     },
 
     reset: function() {
         var self = this;
-        this.files = [];
-        this.input.value = '';
-        this.container.querySelector('#file-list').innerHTML = '';
-        var block1 = this.container.querySelector('.block1');
-        var block2 = this.container.querySelector('.block2');
-        this.container.classList.remove('after-upload');
-        block2.classList.add('hidden');
-        block1.classList.remove('hidden');
-        this.container.querySelector('.comment-box').value = '';
-
         setTimeout(function() {
+            self.container.querySelector('#file-list').innerHTML = '';
+            var block1 = self.container.querySelector('.block1');
+            var block2 = self.container.querySelector('.block2');
+            self.container.classList.remove('after-upload');
+            block2.classList.add('hidden');
+            block1.classList.remove('hidden');
+            self.container.querySelector('.comment-box').value = '';
             self.container.removeEventListener('click', self.disableClick, false);
         }, 200);
 
+    },
+
+    getGeolocation: function() {
+        var geoEl = this.container.querySelector('.geolocation .data');
+        var self = this;
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                self.coordinates = position.coords;
+                geoEl.innerHTML = " latitude: " + parseFloat(position.coords.latitude).toFixed(2)+
+                    ", longitude: "+parseFloat(position.coords.longitude).toFixed(2);
+                self.canPost = true;
+            });
+        } else {
+            geoEl.innerHTML = "Geolocation is not supported in your browser. Check security preferences.";
+            self.coordinates = {};
+            self.canPost = true;
+        }
+
+        setTimeout(function() {
+            self.canPost = true;
+            if (!self.coordinates.longitude) {
+                geoEl.innerHTML = " Geolocation is currently not working in your browser.";
+            }
+        }, 5000);
     }
 };

@@ -102,6 +102,7 @@ html, body {
     margin: 30px auto;
     padding: 15px;
     border: 1px solid #BDBDBD;
+    position: relative;
 }
 
 .friends-box .top {
@@ -123,6 +124,28 @@ html, body {
     border: 0;
 }
 
+
+.friends-box .bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-left: -15px;
+}
+
+.friends-box .bottom form {
+    width: 100%;
+    display: flex;
+}
+
+.friends-box input {
+    flex-grow: 9;
+    margin-right: 2px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+}
+
 .small-friends-box .add-friend-btn {
     height: 45px;
     margin-top: -10px;
@@ -131,7 +154,7 @@ html, body {
 }
 
 .small-friends-box {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     height: 45px;
     width: 100%;
@@ -160,6 +183,55 @@ html, body {
     -ms-user-select: none;
 }
 
+.documents {
+    width: 100%;
+    padding: 15px;
+}
+
+.documents .document {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;
+}
+
+.documents .icon-document {
+    width: 40px;
+    height: 40px;
+    background-color: #eeeeee;
+    display: inline-block;
+    margin: auto;
+}
+
+.geolocation {
+    font-size: 12px;
+}
+
+
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #FFCDD2;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid #BDBDBD;
+}
+
+td {
+    padding: 15px;
+}
+
+tfoot td {
+    background-color: #FFCDD2;
+    padding: 10px;
+}
 
 audio {
     margin: 30px 0px 0 0;
@@ -169,6 +241,10 @@ audio {
 
 ul {
     list-style-image: url("../img/note.png");
+}
+
+button {
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -211,9 +287,8 @@ ul {
     .small-friends-box {
         display: block;
     }
-}
 
-
-@media (max-width: 550px) {
-
+    .main-container {
+        margin-bottom: 40px;
+    }
 }

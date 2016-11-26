@@ -9,26 +9,8 @@ h2 {
     margin: 0px;
 }
 
-table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-th {
-    background-color: #FFCDD2;
-    padding: 10px;
-}
-
-table, th, td {
-    border: 1px solid #BDBDBD;
-}
-
-td {
-    padding: 15px;
-}
-
-tfoot td {
-    background-color: #FFCDD2;
-    padding: 10px;
+@media (max-width: 430px) {
+    .header-bar .title {
+        display: none;
+    }
 }

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="../js/lib/webcomponents.min.js"></script>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundInCloud | my library</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
@@ -43,15 +47,18 @@
                     </div>
 
                     <div class="controls">
-                        <div class="btn like-btn">
-                            like
-                        </div>
-                        <div class="btn share-btn">
-                            share
-                        </div>
-                        <div class="btn add-to-lib-btn">
-                            <span>edit</span>
-                        </div>
+                        <form>
+                            <div class="btn like-btn">
+                                <button type="submit">like</button>
+                            </div>
+                            <div class="btn share-btn">
+                                <button type="submit">share</button>
+                            </div>
+                            <div class="btn add-to-lib-btn">
+                                <span class="long"> <button type="submit">add to my library</button></span>
+                                <span class="short"> <button type="submit">add</button></span>
+                            </div>
+                        </form>
                     </div>
 
                 </div>
@@ -62,8 +69,18 @@
             <div class="friends-box">
                 <div class="top">People you may know</div>
                 <div class="add-friend">
-                    <span class="name">John Doe</span>
-                    <button class="add-friend-btn">Add friend</button>
+                    <form>
+                        <span class="name">John Doe</span>
+                        <button type="submit" class="add-friend-btn">Add friend</button>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <div class="search">
+                        <form>
+                            <input type="text" name="search_friends" placeholder="Search friends"/>
+                            <button type="submit" class="search-btn">Search</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,14 +90,17 @@
 
     <div class="small-friends-box">
         <div class="add-friend">
-            <span class="name">John Doe</span>
-            <button class="add-friend-btn">Add friend</button>
+            <form>
+                <span class="name">John Doe</span>
+                <button type="submit" class="add-friend-btn">Add friend</button>
+            </form>
         </div>
     </div>
 
-</body>
 
-<script src="../js/main.js"></script>
-<script src="../js/friends.js"></script>
-<script src="../js/home.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/friends.js"></script>
+    <script src="../js/home.js"></script>
+
+</body>
 </html>

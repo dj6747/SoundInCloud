@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="../js/lib/webcomponents.min.js"></script>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundInCloud | home</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
@@ -33,31 +37,38 @@
             <div class="news-feed">
                 <div class="news-feed-element">
                     <div class="title">
-                        Janez Novak uploaded a new song
+                        Janez Novak uploaded new files
                     </div>
-                    <div class="audio">
-                        <audio controls>
-                            <source src="../audio/song1.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
+                    <div class="files">
+                        <div class="audio">
+                            <audio controls>
+                                <source src="../audio/song1.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
 
-                    <div class="comment-box">
-                        <input type="text" placeholder="Type in your comment"/>
-                        <button>Post</button>
+                        <div class="documents">
+                            <div class="document" data-src="testSrc">
+                                <div class="icon icon-document"></div>
+                                <div class="document-title">Dokument 1</div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="controls">
-                        <div class="btn like-btn">
-                            like
-                        </div>
-                        <div class="btn share-btn">
-                            share
-                        </div>
-                        <div class="btn add-to-lib-btn">
-                            <span class="long">add to my library</span>
-                            <span class="short">add</span>
-                        </div>
+                        <form>
+                            <div class="btn like-btn">
+                                <button type="submit">like</button>
+                            </div>
+                            <div class="btn share-btn">
+                                <button type="submit">share</button>
+                            </div>
+                            <div class="btn add-to-lib-btn">
+                                <span class="long"> <button type="submit">add to my library</button></span>
+                                <span class="short"> <button type="submit">add</button></span>
+                            </div>
+                        </form>
                     </div>
 
                 </div>
@@ -68,8 +79,18 @@
             <div class="friends-box">
                 <div class="top">People you may know</div>
                 <div class="add-friend">
-                    <span class="name">John Doe</span>
-                    <button class="add-friend-btn">Add friend</button>
+                    <form>
+                        <span class="name">John Doe</span>
+                        <button type="submit" class="add-friend-btn">Add friend</button>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <div class="search">
+                        <form>
+                            <input type="text" name="search_friends" placeholder="Search friends"/>
+                            <button type="submit" class="search-btn">Search</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,15 +100,16 @@
 <div class="small-friends-box">
     <div class="top">People you may know</div>
     <div class="add-friend">
-        <span class="name">John Doe</span>
-        <button class="add-friend-btn">Add friend</button>
+        <form>
+            <span class="name">John Doe</span>
+            <button type="submit" class="add-friend-btn">Add friend</button>
+        </form>
     </div>
 </div>
 
 
+    <script src="../js/main.js"></script>
+    <script src="../js/friends.js"></script>
+    <script src="../js/home.js"></script>
 </body>
-
-<script src="../js/main.js"></script>
-<script src="../js/friends.js"></script>
-<script src="../js/home.js"></script>
 </html>
