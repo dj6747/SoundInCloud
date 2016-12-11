@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{239628A2-0D0D-4826-A1B2-5147B0EB69BE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SoundInCloudBackend/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="SoundInCloudBackend/Controllers/HomeController.cs" Line="23" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SoundInCloudBackend PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

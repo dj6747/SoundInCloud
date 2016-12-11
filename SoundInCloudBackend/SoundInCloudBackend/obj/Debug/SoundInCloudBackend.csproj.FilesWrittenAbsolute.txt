@@ -1,0 +1,16 @@
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/SoundInCloudBackend.dll.mdb
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/SoundInCloudBackend.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/obj/Debug/SoundInCloudBackend.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/obj/Debug/SoundInCloudBackend.dll.mdb
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.Razor.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/Microsoft.Web.Infrastructure.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.Helpers.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.WebPages.Deployment.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.WebPages.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.WebPages.Razor.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.Mvc.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Net.Http.Formatting.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.Http.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/System.Web.Http.WebHost.dll
+/Users/domen/Documents/FRI/SP/SoundInCloud/SoundInCloudBackend/SoundInCloudBackend/bin/Newtonsoft.Json.dll

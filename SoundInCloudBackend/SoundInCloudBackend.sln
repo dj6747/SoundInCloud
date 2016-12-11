@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundInCloudBackend", "SoundInCloudBackend\SoundInCloudBackend.csproj", "{239628A2-0D0D-4826-A1B2-5147B0EB69BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundInCloudBackend.Tests", "SoundInCloudBackend.Tests\SoundInCloudBackend.Tests.csproj", "{BC555B8A-C7B2-4CEB-A8BD-A069C86D95F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{239628A2-0D0D-4826-A1B2-5147B0EB69BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239628A2-0D0D-4826-A1B2-5147B0EB69BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239628A2-0D0D-4826-A1B2-5147B0EB69BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239628A2-0D0D-4826-A1B2-5147B0EB69BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC555B8A-C7B2-4CEB-A8BD-A069C86D95F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC555B8A-C7B2-4CEB-A8BD-A069C86D95F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC555B8A-C7B2-4CEB-A8BD-A069C86D95F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC555B8A-C7B2-4CEB-A8BD-A069C86D95F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
