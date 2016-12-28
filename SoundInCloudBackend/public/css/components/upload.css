@@ -1,0 +1,64 @@
+.upload-container {
+    background-color: #eeeeee;
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px dashed #BDBDBD;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.upload-container-h1 {
+    color: #757575;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+#file-input {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.upload-container .after-upload {
+    border: 2px solid #BDBDBD;
+    background-color: #ffffff;
+}
+
+
+.upload-container .block2 .comment-section {
+    display: flex;
+    width: 100%;
+}
+
+.upload-container input[type="text"] {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    border: 2px solid #BDBDBD;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.upload-container .btn-post {
+    background-color: #448AFF;
+    color: #ffffff;
+    border: 0;
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.upload-container .geolocation {
+    font-size: 12px;
+}

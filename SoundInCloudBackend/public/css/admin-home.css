@@ -1,0 +1,16 @@
+.main-container {
+    padding: 30px;
+    box-sizing: border-box;
+    display: block;
+}
+
+h2 {
+    display: block;
+    margin: 0px;
+}
+
+@media (max-width: 430px) {
+    .header-bar .title {
+        display: none;
+    }
+}

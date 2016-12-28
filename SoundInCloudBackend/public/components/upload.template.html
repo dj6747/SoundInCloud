@@ -1,0 +1,21 @@
+<template id="upload-template">
+    <link rel="stylesheet" type="text/css" href="../css/components/upload.css">
+    <div class="upload-container">
+        <div class="block1">
+            <h1 class="upload-container-h1">Upload</h1>
+            <input type="file" id="file-input" multiple/>
+        </div>
+
+        <div class="block2 hidden">
+            <b>Uploaded files:</b>
+            <ul id="file-list"></ul>
+            <div class="comment-section">
+                <input type="text" class="comment-box" placeholder="Insert message"/>
+                <button type="button" class="btn btn-post">Post</button>
+            </div>
+            <span class="geolocation">Your location:<span class="data"> loading...</span></span>
+        </div>
+
+    </div>
+</template>
+<script src="../js/components/upload.js"></script>

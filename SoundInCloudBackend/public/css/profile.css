@@ -1,0 +1,64 @@
+.main-container .left-side {
+    border: 1px solid #BDBDBD;
+    padding: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+
+.main-container .left-side button {
+    width: 180px;
+    height: 35px;
+    margin: 15px auto;
+    border: 0;
+    background-color: #448AFF;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 7px 15px;
+    border-radius: 3px;
+}
+
+.main-container .left-side input[type=text],
+.main-container .left-side input[type=email],
+.main-container .left-side input[type=password] {
+    width: 180px;
+    height: 30px;
+    margin: 10px auto;
+    border: 2px solid #BDBDBD;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .main-container .left-side {
+        margin: 0;
+        border: 0px;
+    }
+
+    .main-container .right-side {
+        display: none;
+    }
+
+    form {
+        margin: auto;
+        width: 100%;
+    }
+
+    .main-container .left-side input[type=text],
+    .main-container .left-side button,
+    .main-container .left-side input[type=email],
+    .main-container .left-side input[type=password] {
+        width: 80%;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-bar .title {
+        display: none;
+    }
+}

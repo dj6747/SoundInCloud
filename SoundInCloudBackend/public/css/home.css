@@ -1,0 +1,123 @@
+.news-feed {
+    width: 80%;
+    margin: auto;
+
+}
+
+.news-feed-element .title{
+    font-size: 14px;
+}
+
+.news-feed-element {
+    margin-left: -10px;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    min-height: 40px;
+    display: block;
+    position: relative;
+    border: 1px solid #BDBDBD;
+    margin-bottom: 15px;
+}
+
+.news-feed-element .controls {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    border-top: 1px solid #BDBDBD;
+    padding-top: 5px;
+}
+
+.news-feed-element .controls div{
+
+    display: inline-block;
+    width: 33%;
+    float: left;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.news-feed-element .controls .long {
+    display: inline-block;
+}
+
+.news-feed-element .controls .short {
+    display: none;
+}
+
+
+.news-feed-element .comment-box {
+    margin-top: 20px;
+    display: flex;
+}
+
+.comment-box input {
+    flex-grow: 8;
+    margin-right: 15px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+}
+
+.active-action-btn {
+    color: #448AFF;
+}
+
+.controls button[type="submit"] {
+    border:none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+input[type="range"] {
+    float: right;
+}
+
+
+@media (max-width: 1024px) {
+
+    table{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    td, th{
+        display: inline-block;
+        width:100%;
+    }
+
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+
+    td span{
+        float: left;
+    }
+
+    input[type="range"] {
+        margin-right: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .news-feed-element .controls .long {
+        display: none;
+    }
+
+
+    .news-feed-element .controls .short {
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .header-bar .title {
+        display: none;
+    }
+}

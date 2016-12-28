@@ -1,0 +1,78 @@
+body {
+    overflow: hidden;
+}
+
+.login-form {
+    float: left;
+    display: block;
+    width: 30%;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.login-form form {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin-top: 40px;
+    width: 60%;
+}
+
+
+.login-form input[type=text],
+.login-form input[type=email],
+.login-form input[type=password] {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    border: 2px solid #BDBDBD;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background-color: #448AFF;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 15px auto;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        overflow: scroll;
+    }
+
+    .login-form {
+        width: 65%;
+        float: none;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 75%;
+    }
+
+    .login-form form {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .login-form {
+        width: 80%;
+    }
+
+    .login-form form {
+        width: 100%;
+    }
+}
