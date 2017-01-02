@@ -21,6 +21,8 @@ Route::get('/library', 'LibraryController@index')->name('library');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
+Route::post('/news-feed', 'HomeController@createPost')->name('createPost');
+
 Route::get('/logout', function() {
     Auth::logout();
     return redirect()->route('landing_page');

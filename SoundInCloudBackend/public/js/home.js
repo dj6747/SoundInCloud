@@ -92,7 +92,25 @@ NewsFeedModule.prototype = {
         element.querySelector('.like-btn').addEventListener('click', this.likeButtonClick.bind(this));
         element.querySelector('.share-btn').addEventListener('click', this.shareButtonClick.bind(this));
         element.querySelector('.add-to-lib-btn').addEventListener('click', this.addToLibraryButtonClick.bind(this));
+    },
+
+    onPostCallback: function(files, text, location) {
+        $.ajax({
+            type: "POST",
+            url: '/news-feed',
+            data: {
+                text: text,
+                files: '',
+                longitude: location.longitude,
+                latitude: location.latitude
+            },
+            success: function(res) {
+                console.log(res);
+            },
+            dataType: 'json'
+        });
     }
+
 };
 
 
@@ -102,7 +120,7 @@ NewsFeedModule.prototype = {
 
     window.addEventListener('WebComponentsReady', function() {
         var uploadModule = new UploadModule();
-        uploadModule.init(newsFeedModule.addElement.bind(newsFeedModule));
+        uploadModule.init(newsFeedModule.onPostCallback.bind(newsFeedModule));
 
         var newsFeedElement = new NewsFeedElement();
         newsFeedElement.init();

@@ -30,4 +30,23 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    /**
+     * Get user posts
+     */
+    public function posts()
+    {
+        return $this->hasMany('App\NewsFeedPost');
+    }
+
+
+    /**
+     * Get user files
+     */
+    public function files()
+    {
+        return $this->hasMany('App\FileUpload');
+    }
+
 }

@@ -14,3 +14,9 @@ Validator.prototype = {
         return (string.length > 2);
     }
 };
+
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
