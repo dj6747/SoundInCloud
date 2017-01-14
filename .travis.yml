@@ -4,6 +4,7 @@ php:
   - 5.6
 
 before_script:
+  - cd SoundInCloudBackend
   - cp .env.travis .env
   - mysql -e 'create database soundincloud_test;'
   - composer self-update
