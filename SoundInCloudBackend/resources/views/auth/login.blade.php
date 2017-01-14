@@ -6,7 +6,7 @@
             <form id="login-form"  role="form" method="POST" action="{{ url('/login') }}">
                 {{ csrf_field() }}
 
-                <div class="{{ $errors->has('email') ? ' has-error' : '' }}">
+                <div class="{{  $errors->has('email') ? ' has-error' : '' }}">
                     <label for="email">{{ __('E-Mail Address')  }}</label>
 
                     <div >
@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary sign-in">
+                <button type="submit" name="login" class="btn btn-primary sign-in">
                     {{ __('Login') }}
                 </button>
 

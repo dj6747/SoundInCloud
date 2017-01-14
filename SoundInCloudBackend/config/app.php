@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Xinax\LaravelGettext\LaravelGettextServiceProvider::class,
+        Modelizer\Selenium\SeleniumServiceProvider::class,
 
         /*
          * Package Service Providers...
