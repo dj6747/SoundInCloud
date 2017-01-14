@@ -31,8 +31,8 @@ UploadModule.prototype = {
 
         document.registerElement('upload-container', {prototype: proto});
 
-        var post_btn = this.container.querySelector('.btn-post');
-        post_btn.addEventListener('click', this.onPost.bind(this), false);
+        /*var post_btn = this.container.querySelector('.btn-post');
+        post_btn.addEventListener('click', this.onPost.bind(this), false);*/
     },
 
     onDrop: function(event) {
@@ -75,19 +75,12 @@ UploadModule.prototype = {
     },
 
     onPost: function(event) {
-        if (!this.posting && this.canPost) {
-            this.posting = true;
-            var input = this.container.querySelector('.comment-box');
-            if (input.value.length) {
-                this.onPostCallback(this.files, input.value, this.coordinates);
-                this.reset();
-                this.canPost = false;
-            } else {
-                alert('Please insert message.');
-            }
-            this.posting = false;
-        } else if (!this.canPost) {
-            alert("Waiting for geolocation to load. Please try again in few moments.");
+        var input = this.container.querySelector('.comment-box');
+        if (input.value.length) {
+            this.onPostCallback(this.files, input.value, this.coordinates);
+            this.reset();
+        } else {
+            alert('Please insert message.');
         }
     },
 

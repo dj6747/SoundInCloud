@@ -15,43 +15,29 @@
     <div class="left-side">
         <h2>Janez Novak</h2>
         <form id="register-form">
-            Name:<br>
-            <input type="text" name="firstname" placeholder="Enter your name..." autofocus><br>
-            Last name:<br>
-            <input type="text" name="lastname" placeholder="Enter your last name..." ><br>
-            Email:<br>
-            <input type="email" name="email" placeholder="Enter your email..."><br>
-            Password:<br>
-            <input type="password" placeholder="Enter your password..." name="password"><br>
-            Repeat password:<br>
-            <input type="password" placeholder="Repeat your password..." name="repeat_password">
+            {{ __('Name') }}:<br>
+            <input type="text" name="firstname" placeholder="{{ __('Enter your name') }}..." autofocus><br>
+            {{ __('Last name') }}:<br>
+            <input type="text" name="lastname" placeholder="{{ __('Enter your last name') }}..." ><br>
+            {{ __('Email') }}:<br>
+            <input type="email" name="email" placeholder="{{ __('Enter your email') }}..."><br>
+            {{ __('Password') }}:<br>
+            <input type="password" placeholder="{{ __('Enter your password') }}..." name="password"><br>
+            {{ __('Repeat password') }}:<br>
+            <input type="password" placeholder="{{ __('Repeat your password') }}..." name="repeat_password">
             <br>
-            Gender:
+            {{ __('Gender') }}:
             <select name="gender">
-                <option value="M">Male</option>
-                <option value="F">Female</option>
+                <option value="M">{{ __('Male') }}</option>
+                <option value="F">{{ __('Female') }}</option>
             </select><br>
 
-            <button class="sign-up">Update data</button>
+            <button class="sign-up">{{ __('Update data') }}</button>
         </form>
     </div>
 
     <div class="right-side">
-        <div class="friends-box">
-            <div class="top">People you may know</div>
-            <div class="add-friend">
-                <span class="name">John Doe</span>
-                <button type="submit" class="add-friend-btn">Add friend</button>
-            </div>
-            <div class="bottom">
-                <div class="search">
-                    <form>
-                        <input type="text" name="search_friends" placeholder="Search friends"/>
-                        <button type="submit" class="search-btn">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        @include('components.friends-box')
     </div>
 @endsection
 

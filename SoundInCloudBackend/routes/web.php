@@ -15,6 +15,8 @@ Route::get('/', '\App\Http\Controllers\Auth\LoginController@showLoginForm')->nam
 
 Auth::routes();
 
+Route::get('/admin-home', 'AdminHomeController@index')->name('admin_home')->middleware('admin');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/library', 'LibraryController@index')->name('library');

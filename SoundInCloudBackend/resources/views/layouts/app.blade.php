@@ -27,10 +27,10 @@
         </div>
 
         <div class="right-side">
-            <span class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}"><a href="/home">Home</a></span>
-            <span class="{{Route::currentRouteName() == 'library' ? 'active' : ''}}"><a href="/library">My library</a></span>
-            <span class="{{Route::currentRouteName() == 'profile' ? 'active' : ''}}"><a href="/profile">My profile</a></span>
-            <span><a href="/logout">Sign out</a></span>
+            <span class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}"><a href="/home">{{ __('Home') }}</a></span>
+            <span class="{{Route::currentRouteName() == 'library' ? 'active' : ''}}"><a href="/library">{{ __('My library') }}</a></span>
+            <span class="{{Route::currentRouteName() == 'profile' ? 'active' : ''}}"><a href="/profile">{{ __('My profile') }}</a></span>
+            <span><a href="/logout">{{ __('Sign out') }}</a></span>
         </div>
     </div>
 

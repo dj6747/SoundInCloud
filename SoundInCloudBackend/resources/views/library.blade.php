@@ -12,7 +12,7 @@
 
 @section('content')
     <div class="left-side">
-        <upload-container></upload-container>
+        @include('components.upload')
 
 
         <div class="news-feed">
@@ -47,23 +47,7 @@
     </div>
 
     <div class="right-side">
-        <div class="friends-box">
-            <div class="top">People you may know</div>
-            <div class="add-friend">
-                <form>
-                    <span class="name">John Doe</span>
-                    <button type="submit" class="add-friend-btn">Add friend</button>
-                </form>
-            </div>
-            <div class="bottom">
-                <div class="search">
-                    <form>
-                        <input type="text" name="search_friends" placeholder="Search friends"/>
-                        <button type="submit" class="search-btn">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        @include('components.friends-box')
     </div>
 
 @endsection

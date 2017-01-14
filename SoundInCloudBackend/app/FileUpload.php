@@ -25,4 +25,15 @@ class FileUpload extends Model
     {
         return $this->belongsTo('App\NewsFeedPost');
     }
+
+
+    /**
+     * Check if file type is audio
+     * @return boolean
+     */
+    public function isAudioFile() {
+        return ($this->mime_type == 'audio/mpeg') || ($this->mime_type == 'audio/ogg') || ($this->mime_type == 'audio/wav');
+    }
+
+    
 }

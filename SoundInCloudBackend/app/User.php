@@ -10,7 +10,7 @@ class User extends Authenticatable
     use Notifiable;
 
 
-    public static  $ROLE_USER = 1;
+    public static $ROLE_USER = 1;
     public static $ROLE_ADMIN = 10;
 
     /**

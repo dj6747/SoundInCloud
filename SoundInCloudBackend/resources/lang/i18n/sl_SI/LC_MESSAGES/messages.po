@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MultilanguageLaravelApplication\n"
+"POT-Creation-Date: 2017-01-14 22:28+0100\n"
+"PO-Revision-Date: 2017-01-14 22:48+0100\n"
+"Last-Translator: James Translator <james@translations.colm>\n"
+"Language-Team: James Translator <james@translations.colm>\n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-KeywordsList: _;__;gettext;_n:1,2;ngettext:1,2;dgettext:2\n"
+"X-Poedit-Basepath: ../../../../../app\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Http\n"
+"X-Poedit-SearchPath-1: ../resources/views\n"
+"X-Poedit-SearchPath-2: Console\n"
+"X-Poedit-SearchPath-3: ../storage/framework/messages/\n"
+
+#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:8
+msgid "home"
+msgstr "domov"
+
+#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:31
+msgid "Your browser does not support the audio element."
+msgstr "Vaš brskalnik ne podpira avdio elementov"
+
+#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:50
+msgid "like"
+msgstr "všečkaj"
+
+#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:53
+msgid "share"
+msgstr "deli"
+
+#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:56
+msgid "add to my library"
+msgstr "dodaj v knjižnico"
+
+#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:57
+msgid "add"
+msgstr "dodaj"
+
+#: ../storage/framework/messages//221fdf0a90fdeeb14c8f758bf62d02f253ed58f7.php.php:30
+msgid "Home"
+msgstr "Domov"
+
+#: ../storage/framework/messages//221fdf0a90fdeeb14c8f758bf62d02f253ed58f7.php.php:31
+msgid "My library"
+msgstr "Moja knjižnica"
+
+#: ../storage/framework/messages//221fdf0a90fdeeb14c8f758bf62d02f253ed58f7.php.php:32
+msgid "My profile"
+msgstr "Moj profil"
+
+#: ../storage/framework/messages//221fdf0a90fdeeb14c8f758bf62d02f253ed58f7.php.php:33
+msgid "Sign out"
+msgstr "Odjava"
+
+#: ../storage/framework/messages//2efbf90ee51f6b7b1a00eca16b5586dedb66329b.php.php:9
+msgid "E-Mail Address"
+msgstr "E-Mail naslov"
+
+#: ../storage/framework/messages//2efbf90ee51f6b7b1a00eca16b5586dedb66329b.php.php:23
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:22
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:55
+msgid "Password"
+msgstr "Geslo"
+
+#: ../storage/framework/messages//2efbf90ee51f6b7b1a00eca16b5586dedb66329b.php.php:37
+msgid "Login"
+msgstr "Prijava"
+
+#: ../storage/framework/messages//2efbf90ee51f6b7b1a00eca16b5586dedb66329b.php.php:43
+msgid "or"
+msgstr "ali"
+
+#: ../storage/framework/messages//2efbf90ee51f6b7b1a00eca16b5586dedb66329b.php.php:43
+msgid "sign up"
+msgstr "registracija"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:16
+msgid "Name"
+msgstr "Ime"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:17
+msgid "Enter your name"
+msgstr "Vpiši svoje ime"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:18
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:27
+msgid "Last name"
+msgstr "Priimek"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:19
+msgid "Enter your last name"
+msgstr "Vpiši svoj priimek"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:20
+msgid "Email"
+msgstr "Email"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:21
+msgid "Enter your email"
+msgstr "Vpiši svoj email"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:23
+msgid "Enter your password"
+msgstr "Vpiši svoje geslo"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:24
+msgid "Repeat password"
+msgstr "Ponovi geslo"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:25
+msgid "Repeat your password"
+msgstr "Ponovi geslo"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:27
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:78
+msgid "Gender"
+msgstr "Spol"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:29
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:82
+msgid "Male"
+msgstr "Moški"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:30
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:83
+msgid "Female"
+msgstr "Ženska"
+
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:33
+msgid "Update data"
+msgstr "Posodobi podatke"
+
+#: ../storage/framework/messages//98f0bf20735bd816afd3c36db1099f96d821f1af.php.php:5
+msgid "Upload"
+msgstr "Naloži"
+
+#: ../storage/framework/messages//98f0bf20735bd816afd3c36db1099f96d821f1af.php.php:21
+msgid "Uploaded files"
+msgstr "Naložene datoteke"
+
+#: ../storage/framework/messages//98f0bf20735bd816afd3c36db1099f96d821f1af.php.php:24
+msgid "Insert message"
+msgstr "Vstavi sporočilo"
+
+#: ../storage/framework/messages//98f0bf20735bd816afd3c36db1099f96d821f1af.php.php:30
+msgid "Post"
+msgstr "Objavi"
+
+#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:2
+msgid "People you may know"
+msgstr "Ljudje ki jih mogoče poznaš"
+
+#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:5
+msgid "Add friend"
+msgstr "Dodaj prijatelja"
+
+#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:11
+msgid "Search"
+msgstr "Iskanje"
+
+#: ../storage/framework/messages//ae8b2a50c3af2ea7ddf2f5790bef209443d8d62e.php.php:29
+msgid "Store your music. Add effects. Share it."
+msgstr "Shrani glasbo. Dodaj efekte. Deli."
+
+#: ../storage/framework/messages//ae8b2a50c3af2ea7ddf2f5790bef209443d8d62e.php.php:31
+msgid "Features"
+msgstr "Funkcije"
+
+#: ../storage/framework/messages//ae8b2a50c3af2ea7ddf2f5790bef209443d8d62e.php.php:34
+msgid "share songs"
+msgstr "Deli pesmi"
+
+#: ../storage/framework/messages//ae8b2a50c3af2ea7ddf2f5790bef209443d8d62e.php.php:38
+msgid "connect with friends"
+msgstr "poveži se s prijatelji"
+
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:12
+msgid "First name"
+msgstr "Ime"
+
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:41
+msgid "E-mail"
+msgstr "Email"
+
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:69
+msgid "Confirm password"
+msgstr "Ponovi geslo"
+
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:93
+msgid "Register"
+msgstr "Registracija"

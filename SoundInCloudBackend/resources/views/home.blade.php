@@ -7,75 +7,69 @@
 @endsection
 
 @section('title')
-    home
+    {{ __('home') }}
 @endsection
 
 @section('content')
     <div class="left-side">
-        <upload-container id="upload"></upload-container>
+        @include('components.upload')
 
 
-        <div class="news-feed">
-            <div class="news-feed-element">
-                <div class="title">
-                    Janez Novak uploaded new files
-                </div>
-                <div class="files">
-                    <div class="audio">
-                        <audio controls>
-                            <source src="../audio/song1.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
+            <div class="news-feed">
+
+                @foreach($news as $element)
+                    <div class="news-feed-element">
+                        <div class="title">
+                            {{ $element->text }}
+                        </div>
+                        <div class="files">
+                            @foreach($element->files as $file)
+                                @if($file->isAudioFile())
+                                    <div class="audio">
+                                        <audio controls>
+                                            <source src="{{ Storage::url($file->path) }}" type="{{ $file->mime_type }}">
+                                            {{ __('Your browser does not support the audio element.') }}
+                                        </audio>
+                                    </div>
+                                @else
+                                    <div class="documents">
+                                        <div class="document" data-src="testSrc">
+                                            <div class="icon icon-document"></div>
+                                            <div class="document-title">{{ $file->name }}</div>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endforeach
+
+                        </div>
+
+                        <div class="controls">
+                            <form>
+                                <div class="btn like-btn">
+                                    <button type="submit">{{ __('like') }}</button>
+                                </div>
+                                <div class="btn share-btn">
+                                    <button type="submit">{{ __('share') }}</button>
+                                </div>
+                                <div class="btn add-to-lib-btn">
+                                    <span class="long"> <button type="submit">{{ __('add to my library') }}</button></span>
+                                    <span class="short"> <button type="submit">{{ __('add') }}</button></span>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
-
-                    <div class="documents">
-                        <div class="document" data-src="testSrc">
-                            <div class="icon icon-document"></div>
-                            <div class="document-title">Dokument 1</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="controls">
-                    <form>
-                        <div class="btn like-btn">
-                            <button type="submit">like</button>
-                        </div>
-                        <div class="btn share-btn">
-                            <button type="submit">share</button>
-                        </div>
-                        <div class="btn add-to-lib-btn">
-                            <span class="long"> <button type="submit">add to my library</button></span>
-                            <span class="short"> <button type="submit">add</button></span>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+            @endforeach
         </div>
     </div>
 
 
 
+
+
+
     <div class="right-side">
-        <div class="friends-box">
-            <div class="top">People you may know</div>
-            <div class="add-friend">
-                <form>
-                    <span class="name">John Doe</span>
-                    <button type="submit" class="add-friend-btn">Add friend</button>
-                </form>
-            </div>
-            <div class="bottom">
-                <div class="search">
-                    <form>
-                        <input type="text" name="search_friends" placeholder="Search friends"/>
-                        <button type="submit" class="search-btn">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        @include('components.friends-box')
     </div>
 
 @endsection

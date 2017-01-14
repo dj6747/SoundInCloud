@@ -95,15 +95,15 @@ NewsFeedModule.prototype = {
     },
 
     onPostCallback: function(files, text, location) {
+        var data = new FormData();
+        $.each(files, function(key, value) {
+            data.append(key, value);
+        });
+
         $.ajax({
             type: "POST",
             url: '/news-feed',
-            data: {
-                text: text,
-                files: '',
-                longitude: location.longitude,
-                latitude: location.latitude
-            },
+            data: data,
             success: function(res) {
                 console.log(res);
             },

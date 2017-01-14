@@ -23,6 +23,6 @@ class NewsFeedPost extends Model
      */
     public function files()
     {
-        return $this->hasMany('App\FileUpload');
+        return $this->hasMany('App\FileUpload', 'newsfeed_post_id');
     }
 }

@@ -26,15 +26,15 @@
 
 <div class="carousel">
     <div class="content">
-        <h1>Store your music. Add effects. Share it.</h1>
+        <h1>{{ __('Store your music. Add effects. Share it.') }}</h1>
         <section>
-            <h3>Features</h3>
+            <h3>{{ __('Features') }}</h3>
             <ul>
                 <li>
-                    share songs
+                    {{ __('share songs') }}
                 </li>
                 <li>
-                    connect with friends
+                    {{ __('connect with friends') }}
                 </li>
             </ul>
         </section>
@@ -44,7 +44,10 @@
 @yield('content')
 
 
-
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
 <script src="../js/login.js"></script>
 </body>

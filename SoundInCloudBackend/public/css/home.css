@@ -71,6 +71,11 @@
     font-size: 14px;
 }
 
+form {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+}
+
 input[type="range"] {
     float: right;
 }
