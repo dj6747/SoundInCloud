@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\FileUpload;
 use App\NewsFeedPost;
 use App\PostLike;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Http\RedirectResponse;
@@ -29,10 +30,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $users = User::all();
         $news = NewsFeedPost::orderBy('updated_at', 'desc')->get();
 
         return view('home', [
-                'news' => $news
+                'news' => $news,
+                'people' => $users
             ]
         );
     }

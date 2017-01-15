@@ -7,10 +7,10 @@ before_script:
   - cd SoundInCloudBackend
   - cp .env.travis .env
   - mysql -e 'create database soundincloud_test;'
-  - php artisan migrate
-  - php artisan key:generate
   - composer self-update
   - composer install --no-interaction
+  - php artisan migrate
+  - php artisan key:generate
 
 script:
   - vendor/bin/phpunit
