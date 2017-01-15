@@ -23,7 +23,11 @@ Route::get('/library', 'LibraryController@index')->name('library');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
+Route::post('/profile', 'ProfileController@update')->name('updateProfile');
+
 Route::post('/news-feed', 'HomeController@createPost')->name('createPost');
+
+Route::post('/like-post', 'HomeController@likePost')->name('likePost');
 
 Route::get('/logout', function() {
     Auth::logout();

@@ -25,4 +25,12 @@ class NewsFeedPost extends Model
     {
         return $this->hasMany('App\FileUpload', 'newsfeed_post_id');
     }
+
+    /**
+     * Check if user liked post
+     */
+    public function userLikes()
+    {
+        return $this->hasOne('App\PostLike', 'newsfeed_post_id');
+    }
 }

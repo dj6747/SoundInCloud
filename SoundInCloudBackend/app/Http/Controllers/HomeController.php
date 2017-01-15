@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\FileUpload;
 use App\NewsFeedPost;
+use App\PostLike;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\File;
 use Illuminate\Support\Facades\Auth;
@@ -82,5 +84,32 @@ class HomeController extends Controller
 
         return redirect()->route('home');
     }
+
+
+
+    /**
+     * Like post
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function likePost(Request $request)
+    {
+        $postId = $request->input('post_id');
+
+        $postLike = PostLike::where('user_id', Auth::id())->where('newsfeed_post_id', $postId)->first();
+
+        if ($postLike) {
+            $postLike->delete();
+        } else {
+            $postLike = new PostLike();
+            $postLike->user_id = Auth::id();
+            $postLike->newsfeed_post_id = $postId;
+            $postLike->save();
+        }
+
+        return redirect()->route('home');
+    }
+
 
 }

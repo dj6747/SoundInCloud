@@ -14,25 +14,85 @@
 
     <div class="left-side">
         <h2>Janez Novak</h2>
-        <form id="register-form">
-            {{ __('Name') }}:<br>
-            <input type="text" name="firstname" placeholder="{{ __('Enter your name') }}..." autofocus><br>
-            {{ __('Last name') }}:<br>
-            <input type="text" name="lastname" placeholder="{{ __('Enter your last name') }}..." ><br>
-            {{ __('Email') }}:<br>
-            <input type="email" name="email" placeholder="{{ __('Enter your email') }}..."><br>
-            {{ __('Password') }}:<br>
-            <input type="password" placeholder="{{ __('Enter your password') }}..." name="password"><br>
-            {{ __('Repeat password') }}:<br>
-            <input type="password" placeholder="{{ __('Repeat your password') }}..." name="repeat_password">
-            <br>
+        <form id="register-form" method="POST" action="{{ route('updateProfile') }}">
+            {{ csrf_field() }}
+
+            <div class="form-group{{ $errors->has('firstname') ? ' has-error' : '' }}">
+                <label for="name" class="col-md-4 control-label">{{ __('First name') }}</label>
+
+                <div class="col-md-6">
+                    <input id="name" type="text"  class="form-control" name="firstname" value="{{ $user->firstname }}" required autofocus>
+
+                    @if ($errors->has('firstname'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('firstname') }}</strong>
+                                    </span>
+                    @endif
+                </div>
+            </div>
+
+
+            <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}">
+                <label for="name" class="col-md-4 control-label">{{ __('Last name') }}</label>
+
+                <div class="col-md-6">
+                    <input id="name" type="text" class="form-control" name="lastname" value="{{ $user->lastname }}" required autofocus>
+
+                    @if ($errors->has('lastname'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('lastname') }}</strong>
+                                    </span>
+                    @endif
+                </div>
+            </div>
+
+            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                <label for="email" class="col-md-4 control-label">{{ __('E-mail') }}</label>
+
+                <div class="col-md-6">
+                    <input id="email" type="email" class="form-control" name="email" value="{{ $user->email}}" required>
+
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                    @endif
+                </div>
+            </div>
+
+            <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                <label for="password" class="col-md-4 control-label">{{ __('Password') }}</label>
+
+                <div class="col-md-6">
+                    <input id="password" type="password" class="form-control" name="password" required>
+
+                    @if ($errors->has('password'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                    @endif
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password-confirm" class="col-md-4 control-label">{{ __('Confirm password') }}</label>
+
+                <div class="col-md-6">
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                </div>
+            </div>
             {{ __('Gender') }}:
             <select name="gender">
-                <option value="M">{{ __('Male') }}</option>
-                <option value="F">{{ __('Female') }}</option>
+                @if($user->gender == 'M')
+                    <option value="M" selected>{{ __('Male') }}</option>
+                    <option value="F">{{ __('Female') }}</option>
+                @else
+                    <option value="M">{{ __('Male') }}</option>
+                    <option value="F" selected>{{ __('Female') }}</option>
+                @endif
             </select><br>
 
-            <button class="sign-up">{{ __('Update data') }}</button>
+            <button type="submit" class="sign-up">{{ __('Update data') }}</button>
         </form>
     </div>
 
