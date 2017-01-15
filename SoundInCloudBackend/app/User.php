@@ -13,6 +13,8 @@ class User extends Authenticatable
     public static $ROLE_USER = 1;
     public static $ROLE_ADMIN = 10;
 
+    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
