@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MultilanguageLaravelApplication\n"
-"POT-Creation-Date: 2017-01-14 22:28+0100\n"
-"PO-Revision-Date: 2017-01-14 22:48+0100\n"
+"POT-Creation-Date: 2017-01-15 21:50+0100\n"
+"PO-Revision-Date: 2017-01-15 21:51+0100\n"
 "Last-Translator: James Translator <james@translations.colm>\n"
 "Language-Team: James Translator <james@translations.colm>\n"
 "Language: sl_SI\n"
@@ -21,26 +21,6 @@ msgstr ""
 #: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:8
 msgid "home"
 msgstr "domov"
-
-#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:31
-msgid "Your browser does not support the audio element."
-msgstr "Vaš brskalnik ne podpira avdio elementov"
-
-#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:50
-msgid "like"
-msgstr "všečkaj"
-
-#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:53
-msgid "share"
-msgstr "deli"
-
-#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:56
-msgid "add to my library"
-msgstr "dodaj v knjižnico"
-
-#: ../storage/framework/messages//006157caaeb99f54f87a0af7bbf19dbe27dd6929.php.php:57
-msgid "add"
-msgstr "dodaj"
 
 #: ../storage/framework/messages//221fdf0a90fdeeb14c8f758bf62d02f253ed58f7.php.php:30
 msgid "Home"
@@ -63,7 +43,7 @@ msgid "E-Mail Address"
 msgstr "E-Mail naslov"
 
 #: ../storage/framework/messages//2efbf90ee51f6b7b1a00eca16b5586dedb66329b.php.php:23
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:22
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:63
 #: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:55
 msgid "Password"
 msgstr "Geslo"
@@ -80,61 +60,51 @@ msgstr "ali"
 msgid "sign up"
 msgstr "registracija"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:16
-msgid "Name"
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:20
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:12
+msgid "First name"
 msgstr "Ime"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:17
-msgid "Enter your name"
-msgstr "Vpiši svoje ime"
-
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:18
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:35
 #: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:27
 msgid "Last name"
 msgstr "Priimek"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:19
-msgid "Enter your last name"
-msgstr "Vpiši svoj priimek"
-
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:20
-msgid "Email"
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:49
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:41
+msgid "E-mail"
 msgstr "Email"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:21
-msgid "Enter your email"
-msgstr "Vpiši svoj email"
-
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:23
-msgid "Enter your password"
-msgstr "Vpiši svoje geslo"
-
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:24
-msgid "Repeat password"
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:77
+#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:69
+msgid "Confirm password"
 msgstr "Ponovi geslo"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:25
-msgid "Repeat your password"
-msgstr "Ponovi geslo"
-
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:27
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:83
 #: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:78
 msgid "Gender"
 msgstr "Spol"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:29
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:86
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:89
 #: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:82
 msgid "Male"
 msgstr "Moški"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:30
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:87
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:90
 #: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:83
 msgid "Female"
 msgstr "Ženska"
 
-#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:33
+#: ../storage/framework/messages//53e11e98912cd2edec14ba2b64b7e41e30b96c52.php.php:94
 msgid "Update data"
 msgstr "Posodobi podatke"
+
+#: ../storage/framework/messages//8a11883c6964750819ddb87c57c3b0bdbdc3eea1.php.php:10
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:13
+msgid "Your browser does not support the audio element."
+msgstr "Vaš brskalnik ne podpira avdio elementov"
 
 #: ../storage/framework/messages//98f0bf20735bd816afd3c36db1099f96d821f1af.php.php:5
 msgid "Upload"
@@ -156,11 +126,11 @@ msgstr "Objavi"
 msgid "People you may know"
 msgstr "Ljudje ki jih mogoče poznaš"
 
-#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:5
+#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:7
 msgid "Add friend"
 msgstr "Dodaj prijatelja"
 
-#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:11
+#: ../storage/framework/messages//a3a9c9248cb1347a05031d94ea85b12bb86bf3b1.php.php:15
 msgid "Search"
 msgstr "Iskanje"
 
@@ -180,18 +150,51 @@ msgstr "Deli pesmi"
 msgid "connect with friends"
 msgstr "poveži se s prijatelji"
 
-#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:12
-msgid "First name"
-msgstr "Ime"
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:3
+msgid "shared some files."
+msgstr "je delil datoteke."
 
-#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:41
-msgid "E-mail"
-msgstr "Email"
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:36
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:38
+msgid "like"
+msgstr "všečkaj"
 
-#: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:69
-msgid "Confirm password"
-msgstr "Ponovi geslo"
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:43
+msgid "share"
+msgstr "deli"
+
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:46
+msgid "add to my library"
+msgstr "dodaj v knjižnico"
+
+#: ../storage/framework/messages//d3fc107719f8e5ff8343f5dba5fce0964595689b.php.php:47
+msgid "add"
+msgstr "dodaj"
 
 #: ../storage/framework/messages//dc869588b40cf881614fa1af36d580da54b4d939.php.php:93
 msgid "Register"
 msgstr "Registracija"
+
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#~ msgid "Enter your name"
+#~ msgstr "Vpiši svoje ime"
+
+#~ msgid "Enter your last name"
+#~ msgstr "Vpiši svoj priimek"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Enter your email"
+#~ msgstr "Vpiši svoj email"
+
+#~ msgid "Enter your password"
+#~ msgstr "Vpiši svoje geslo"
+
+#~ msgid "Repeat password"
+#~ msgstr "Ponovi geslo"
+
+#~ msgid "Repeat your password"
+#~ msgstr "Ponovi geslo"

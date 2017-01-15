@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary sign-in">
+                <button type="submit" name="login" class="btn btn-primary sign-in">
                     <?php echo e(__('Login')); ?>
 
                 </button>

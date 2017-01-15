@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\FileUpload;
+use Illuminate\Support\Facades\Auth;
 
 class LibraryController extends Controller
 {
@@ -21,6 +23,12 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        return view('library');
+
+        $files = FileUpload::where('user_id', Auth::id())
+                ->orderBy('updated_at', 'desc')->get();
+
+        return view('library', [
+            'files' => $files
+        ]);
     }
 }

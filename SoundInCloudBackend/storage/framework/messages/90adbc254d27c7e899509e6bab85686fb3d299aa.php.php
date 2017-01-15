@@ -14,33 +14,9 @@
 
 
         <div class="news-feed">
-            <div class="news-feed-element">
-                <div class="title">
-                    Guns'n roses - Sweet child o'mine
-                </div>
-                <div class="audio">
-                    <audio controls>
-                        <source src="../audio/song1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-
-                <div class="controls">
-                    <form>
-                        <div class="btn like-btn">
-                            <button type="submit">like</button>
-                        </div>
-                        <div class="btn share-btn">
-                            <button type="submit">share</button>
-                        </div>
-                        <div class="btn add-to-lib-btn">
-                            <span class="long"> <button type="submit">add to my library</button></span>
-                            <span class="short"> <button type="submit">add</button></span>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+            <?php $__currentLoopData = $files; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $file): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                <?php echo $__env->make('components.library-element', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
         </div>
     </div>
 

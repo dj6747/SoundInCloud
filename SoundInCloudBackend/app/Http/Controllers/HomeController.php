@@ -29,8 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $news = NewsFeedPost::orderBy('updated_at', 'desc')
-                ->get();
+        $news = NewsFeedPost::orderBy('updated_at', 'desc')->get();
 
         return view('home', [
                 'news' => $news

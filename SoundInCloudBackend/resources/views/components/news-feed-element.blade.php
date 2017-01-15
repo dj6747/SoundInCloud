@@ -1,5 +1,6 @@
 <div class="news-feed-element">
     <div class="title">
+        {{$element->user->firstname}} {{$element->user->lastname}} {{  __('shared some files.') }}<br>
         {{ $element->text }}
     </div>
     <div class="files">

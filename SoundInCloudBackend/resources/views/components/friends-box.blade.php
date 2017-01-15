@@ -1,9 +1,13 @@
 <div class="friends-box">
     <div class="top">{{ __('People you may know') }}</div>
-    <div class="add-friend">
-        <span class="name">John Doe</span>
-        <button type="submit" class="add-friend-btn">{{ __('Add friend') }}</button>
-    </div>
+    @foreach($people as $item)
+        @if($item->id != Auth::id())
+            <div class="add-friend">
+                <span class="name">{{$item->firstname}} {{$item->lastname}}</span>
+                <button type="submit" class="add-friend-btn">{{ __('Add friend') }}</button>
+            </div>
+        @endif
+    @endforeach
     <div class="bottom">
         <div class="search">
             <form>
